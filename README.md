@@ -1,6 +1,19 @@
 # Skeleton
 
-React + webpack template
+React + webpack template.
+
+This app is ready to transpile your JSX React to babel.js!
+
+to get started:
+$ npm install
+$ npm install -g nodemon
+$ npm install -g webpack
+$ npm install -g standard
+
+To compile, run:
+$ npm run watch
+
+ES standard linter is configured, webpack is configured, you should be good to go!
 
 ## License
 
