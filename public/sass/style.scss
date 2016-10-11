@@ -1,0 +1,17 @@
+@import "compass/reset";
+@import "compass/css3";
+@import url('font-awesome.min.css');
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.item {
+  margin-right: 20px;
+  width: 200px;
+  height: auto;
+  min-height: 50px;
+}

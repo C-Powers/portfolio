@@ -1,14 +1,167 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
-const Other = require('./Other')
+
+var projects = [
+  {"name": "Veggie Recipes",
+    "localpath": "images/webScraper.jpg",
+    "url": "https://veggierecipes.herokuapp.com/",
+    "path": "http://i.imgur.com/BsztKQz.jpg",
+    "description": "A web scraper made with Django, utilizing an endpoint, that scrapes the top posts of a subreddit to grab and return a tasty veggie recipe!"
+    },
+  {"name": "Twich Streamers",
+      "localpath": "images/twitchStreamers.jpg",
+      "url": "http://twitchsteamers.pythonanywhere.com/",
+      "path": "http://i.imgur.com/NzLVi3b.jpg",
+      "description": "A responsive JS app, utilizing HTML injection, that returns a list of Twitch streamers. "
+      },
+  {"name": "JS Calculator",
+    "localpath": "images/jscalculator.jpg",
+    "url": "https://codepen.io/cpowers/full/QNYoXx/",
+    "path": "http://i.imgur.com/aFrRDpX.jpg",
+    "description": "A simple calculator created with JavaScript"
+    },
+  {"name": "Random Quote Machine",
+    "localpath": "images/randomQuote.jpg",
+    "url": "https://codepen.io/cpowers/full/mPMvow/",
+    "path": "http://i.imgur.com/0xykqgu.jpg",
+    "description": "An app that returns a random Lord of the Rings Quote. Potatoes, eh?"
+    },
+  {"name": "TicTacToe",
+    "localpath": "images/tictactoe.jpg",
+    "url": "https://codepen.io/cpowers/full/wGbzVj/",
+    "path": "http://i.imgur.com/kKkJlmy.jpg",
+    "description": "A two player tic tac toe game, made with JS"
+    },
+]
+
+
+const Header = React.createClass({
+  render () {
+    return (
+      <div className="jumbotron">
+        <h1 className="display-3">Hello, world!</h1>
+        <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr className="m-y-2" />
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p className="lead">
+          <a clasNames="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+      </div>
+     )
+  }
+})
+
+const ListItem = React.createClass({
+  propTypes: {
+    onClick: React.PropTypes.func.isRequired,
+    isSelected: React.PropTypes.bool
+  },
+  getDefaultProps: function () {
+    return {
+      isSelected: false
+    }
+  },
+  getInitialState: function () {
+    return {
+      hover_flag: false
+    }
+  },
+  hoverEvent: function () {
+    this.setState({hover_flag: !this.state.hover_flag})
+  },
+  render () {
+    let liStyle = {
+      background: 'white',
+      color: 'black'
+    }
+    let deStyle = {
+      display: 'none',
+      zIndex: 1
+    }
+    if (this.props.isSelected || this.state.hover_flag) {
+      liStyle['background'] = '#880000'
+      liStyle['color'] = "white"
+      deStyle['display'] = 'block'
+    }
+    return (
+      <li
+        onClick = {this.props.onClick}
+        onMouseEnter={this.hoverEvent}
+        onMouseLeave={this.hoverEvent}
+        style={liStyle}
+        className="item"
+        >
+        {this.props.name}
+        <p style={deStyle}>
+          {this.props.description}
+        </p>
+      </li>
+    )
+  }
+})
+
+const Parent = React.createClass({
+  getInitialState: function() {
+    return {
+      selectedItem: null
+    }
+  },
+  clickHandler: function(idx) {
+    this.setState({selectedItem: idx})
+  },
+  render () {
+    //console.log(this.props.data)
+    let ulStyle = {
+      padding: '0px',
+      margin: '20px'
+    }
+    let items = this.props.data.map(function (item, idx) {
+      let is_selected = this.state.selectedItem === idx
+      return <ListItem
+               key={item.name}
+               name={item.name}
+               description={item.description}
+               onClick={this.clickHandler.bind(this, idx)}
+               isSelected={is_selected}
+               />
+    }.bind(this))
+    console.log(items)
+    return (
+      <ul style={ulStyle} className="items list-unstyled text-center">
+        {items}
+      </ul>
+    )
+  }
+})
+
+const Footer = React.createClass({
+  render () {
+    return (
+      <footer>
+        <h1>Find Me on the Web</h1>
+        <p>You can contact or follow me via any of these services:</p>
+        <ul className="social list-inline">
+          <li> <i className="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/C-Powers">GitHub</a></li>
+          <li> <i className="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/see_cpowers">Twitter</a></li>
+          <li> <i className="fa fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/christopher-powers-a1010553">LinkedIn</a></li>
+          <li> <i className="fa fa-google-plus" aria-hidden="true"></i> <a href="https://plus.google.com/u/0/115863216480353372116/posts">Google Plus</a></li>
+        </ul>
+      </footer>
+    )
+  }
+})
 
 const App = React.createClass({
   render () {
     return (
-      <Other
-        title={"hello, I am a template. Git clone and do some fun stuff!"}
-        color={"purple"}
-      />
+      <div>
+        <Header />
+        <div className='container-fluid'>
+          <Parent data={projects} />
+        </div>
+        <hr />
+        <Footer />
+      </div>
     )
   }
 })

@@ -1,0 +1,71 @@
+/*
+Error: File to import not found or unreadable: bootstrap-compass.
+       Load paths:
+         Compass::SpriteImporter
+         /Users/cPowers/Desktop/workspace/reactSpace/portfolio/public/sass
+         /Users/cPowers/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets
+         /Users/cPowers/.rvm/gems/ruby-2.2.1/gems/font-awesome-sass-4.6.2/assets/stylesheets
+         /Users/cPowers/.rvm/gems/ruby-2.2.1/gems/font-awesome-sass-4.6.2/assets/stylesheets
+        on line 2 of /Users/cPowers/Desktop/workspace/reactSpace/portfolio/public/sass/styles.scss
+
+1: // Import Bootstrap Compass integration
+2: @import "bootstrap-compass";
+3: 
+4: // Import custom Bootstrap variables
+5: @import "bootstrap-variables";
+6: 
+7: // Import Bootstrap for Sass
+
+Backtrace:
+/Users/cPowers/Desktop/workspace/reactSpace/portfolio/public/sass/styles.scss:2
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/tree/root_node.rb:20:in `render'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/bin/compass:44:in `call'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/bin/compass:22:in `load'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/bin/compass:22:in `<main>'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+/Users/cPowers/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: bootstrap-compass.\A        Load paths:\A          Compass::SpriteImporter\A          /Users/cPowers/Desktop/workspace/reactSpace/portfolio/public/sass\A          /Users/cPowers/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets\A          /Users/cPowers/.rvm/gems/ruby-2.2.1/gems/font-awesome-sass-4.6.2/assets/stylesheets\A          /Users/cPowers/.rvm/gems/ruby-2.2.1/gems/font-awesome-sass-4.6.2/assets/stylesheets\A         on line 2 of /Users/cPowers/Desktop/workspace/reactSpace/portfolio/public/sass/styles.scss\A \A 1: // Import Bootstrap Compass integration\A 2: @import \"bootstrap-compass\";\A 3: \A 4: // Import custom Bootstrap variables\A 5: @import \"bootstrap-variables\";\A 6: \A 7: // Import Bootstrap for Sass"; }
