@@ -5,5 +5,4 @@ coverage
 .nyc_output
 .DS_Store
 myvenv
-sass/.scss
-fonts/
+.sass-cache
