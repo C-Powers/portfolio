@@ -2,6 +2,10 @@
 @import "compass/css3";
 @import url('font-awesome.min.css');
 
+.main-content {
+  margin-bottom: 10em;
+}
+
 .items {
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +15,53 @@
 
 .item {
   margin-right: 20px;
-  width: 200px;
   height: auto;
+  width: 200px;
   min-height: 50px;
+  margin: 0 2em 2em 0;
+  img {
+    height: auto;
+    width: 200px;
+  }
+}
+
+// Social media icons/buttons. In footer
+.social {
+    margin:2em 0;
+    font-family: Helvetica, Arial, sans-serif;
+
+    li {
+        position: relative;
+        @include inline-block();
+        margin: .5em;
+        @include transition(all .15s ease);
+
+        &:hover {
+            @include scale(1.25);
+            //color: pink;
+            .fa-github {color: #6cc644}
+            .fa-twitter {color: #00a0d1}
+            .fa-linkedin {color: #0077b5}
+            .fa-google-plus {color: #dd4b39}
+        }
+
+        &:before {
+            position: absolute;
+            width: 2em; /* center align technique, give width, negative half margin */
+            margin-left: -1em;
+            top: 1.5em;
+            left: 50%;
+        }
+
+        a {
+            display: block;
+            color: inherit;
+            padding: 0;
+            width: 6em;
+            // allow truncation if needed
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
 }
