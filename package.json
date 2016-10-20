@@ -1,14 +1,14 @@
 {
-  "name": "react-skeleton",
+  "name": "powers-portfolio",
   "version": "1.0.0",
-  "description": "Template for react and webpack",
+  "description": "My Web Portfolio",
   "main": "index.js",
   "scripts": {
     "test": "standard",
     "build": "webpack",
     "watch": "webpack --watch"
   },
-  "author": "You n Me",
+  "author": "C powers",
   "license": "MIT",
   "dependencies": {
     "axios": "0.9.1",

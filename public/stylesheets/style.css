@@ -71,25 +71,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 9, ../sass/style.scss */
 .jumbotron {
-  background-color: #34495e !important;
-  color: #ecf0f1 !important;
+  background-color: rgba(52, 73, 94, 0.8) !important;
+  color: black !important;
 }
 /* line 12, ../sass/style.scss */
+.jumbotron img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+}
+/* line 18, ../sass/style.scss */
 .jumbotron p {
   margin-left: 2em;
 }
 
-/* line 17, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
+.top-intro {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+/* line 28, ../sass/style.scss */
 .main-content {
   margin-bottom: 10em;
 }
 
-/* line 21, ../sass/style.scss */
-.desc {
-  position: absolute;
-}
-
-/* line 25, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 .items {
   display: flex;
   flex-wrap: wrap;
@@ -97,43 +107,68 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   align-items: stretch;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 .item {
+  background-color: white;
   margin-right: 20px;
   height: auto;
   width: 400px;
   min-height: 50px;
   margin: 0 2em 2em 0;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
-/* line 38, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
+.item:hover {
+  -moz-transform: scale(1.25, 1.25);
+  -ms-transform: scale(1.25, 1.25);
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+/* line 50, ../sass/style.scss */
 .item img {
   height: auto;
   width: 400px;
   z-index: -1;
 }
-/* line 43, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 .item p {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 5px;
   width: 400px;
 }
 
-/* line 51, ../sass/style.scss */
-footer {
-  background-color: #c0392b;
+/* line 62, ../sass/style.scss */
+.desc {
+  display: 'block';
+  z-index: 1;
+  position: absolute;
 }
 
-/* line 54, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
+footer {
+  background-color: #c0392b;
+  padding: 2em 0 5em 0;
+}
+
+/* line 74, ../sass/style.scss */
 .social {
   margin: 2em 0;
   font-family: Helvetica, Arial, sans-serif;
 }
-/* line 58, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 .social h1 {
   margin-bottom: 5em;
 }
-/* line 62, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
+.social p {
+  font-size: 1.25em;
+}
+/* line 86, ../sass/style.scss */
 .social li {
+  font-size: 1.25em;
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -146,30 +181,30 @@ footer {
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
-/* line 68, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .social li:hover {
   -moz-transform: scale(1.25, 1.25);
   -ms-transform: scale(1.25, 1.25);
   -webkit-transform: scale(1.25, 1.25);
   transform: scale(1.25, 1.25);
 }
-/* line 71, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .social li:hover .fa-github {
   color: #6cc644;
 }
-/* line 72, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 .social li:hover .fa-twitter {
   color: #00a0d1;
 }
-/* line 73, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .social li:hover .fa-linkedin {
   color: #0077b5;
 }
-/* line 74, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .social li:hover .fa-google-plus {
   color: #dd4b39;
 }
-/* line 77, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .social li:before {
   position: absolute;
   width: 2em;
@@ -178,7 +213,7 @@ footer {
   top: 1.5em;
   left: 50%;
 }
-/* line 85, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .social li a {
   display: block;
   color: inherit;
