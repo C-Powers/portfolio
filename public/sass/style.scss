@@ -7,19 +7,26 @@
 }
 
 .jumbotron {
-  background-color: #34495e !important;
-  color: #ecf0f1 !important;
+  background-color: rgba(52, 73, 94,0.80)!important;
+  color: black !important;
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+  }
   p {
     margin-left: 2em;
   }
 }
 
-.main-content {
-  margin-bottom: 10em;
+.top-intro{
+  @include display-flex;
+  @include flex-direction(row);
 }
 
-.desc {
-  position: absolute;
+.main-content {
+  margin-bottom: 10em;
 }
 
 .items {
@@ -30,11 +37,16 @@
 }
 
 .item {
+  background-color: white;
   margin-right: 20px;
   height: auto;
   width: 400px;
   min-height: 50px;
   margin: 0 2em 2em 0;
+  @include transition(all .15s ease);
+  &:hover {
+    @include scale(1.25);
+  }
   img {
     height: auto;
     width: 400px;
@@ -47,9 +59,17 @@
   }
 }
 
+.desc {
+  display: 'block';
+  z-index: 1;
+  position: absolute;
+}
+
+
 // Social media icons/buttons. In footer
 footer {
   background-color: #c0392b;
+  padding: 2em 0 5em 0;
 }
 .social {
     margin:2em 0;
@@ -59,7 +79,12 @@ footer {
       margin-bottom: 5em;
     }
 
+    p {
+      font-size: 1.25em;
+    }
+
     li {
+        font-size: 1.25em;
         position: relative;
         @include inline-block();
         margin: .5em;
