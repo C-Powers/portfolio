@@ -166,7 +166,7 @@
 	          ' ',
 	          React.createElement(
 	            'a',
-	            { href: 'https://github.com/C-Powers' },
+	            { href: 'https://github.com/C-Powers', target: '_blank' },
 	            ' ',
 	            React.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' }),
 	            ' GitHub'
@@ -178,7 +178,7 @@
 	          ' ',
 	          React.createElement(
 	            'a',
-	            { href: 'https://twitter.com/see_cpowers' },
+	            { href: 'https://twitter.com/see_cpowers', target: '_blank' },
 	            ' ',
 	            React.createElement('i', { className: 'fa fa-twitter', 'aria-hidden': 'true' }),
 	            'Twitter'
@@ -190,7 +190,7 @@
 	          ' ',
 	          React.createElement(
 	            'a',
-	            { href: 'https://www.linkedin.com/in/christopher-powers-a1010553' },
+	            { href: 'https://www.linkedin.com/in/christopher-powers-a1010553', target: '_blank' },
 	            ' ',
 	            React.createElement('i', { className: 'fa fa-linkedin', 'aria-hidden': 'true' }),
 	            ' LinkedIn'
@@ -202,7 +202,7 @@
 	          ' ',
 	          React.createElement(
 	            'a',
-	            { href: 'https://plus.google.com/u/0/115863216480353372116/posts' },
+	            { href: 'https://plus.google.com/u/0/115863216480353372116/posts', target: '_blank' },
 	            ' ',
 	            React.createElement('i', { className: 'fa fa-google-plus', 'aria-hidden': 'true' }),
 	            'Google Plus'
