@@ -93,48 +93,92 @@
 
 	var Header = React.createClass({
 	  displayName: 'Header',
+
+	  /*  I've recently graduated with a degree in Physics from UC Santa Cruz,
+	    and I'm looking to apply my expertise in <strong>Javascript</strong> (React, Node)
+	    and <strong>Python</strong> (Flask, Django, scripting).
+	  */
 	  render: function render() {
 	    return React.createElement(
 	      'div',
 	      { className: 'jumbotron' },
 	      React.createElement(
 	        'div',
-	        { className: 'top-into' },
+	        { className: 'top-intro' },
 	        React.createElement(
-	          'div',
-	          null,
+	          'h1',
+	          { className: 'display-3' },
+	          'I\'m ',
 	          React.createElement(
-	            'h1',
-	            { className: 'display-3' },
-	            'Hello, (hiring) world!'
+	            'strong',
+	            null,
+	            ' Chris Powers '
 	          ),
+	          ' '
+	        ),
+	        React.createElement(
+	          'p',
+	          { className: 'lead' },
+	          'A ',
 	          React.createElement(
-	            'p',
-	            { className: 'lead' },
-	            'My name is ',
-	            React.createElement(
-	              'strong',
-	              null,
-	              ' Chris Powers '
-	            ),
-	            ', and I\'m a web developer living in San Diego, California.'
-	          )
+	            'strong',
+	            null,
+	            'web developer'
+	          ),
+	          ' and barista living in San Diego, California.'
 	        )
 	      ),
 	      React.createElement('hr', { className: 'm-y-2' }),
 	      React.createElement(
-	        'p',
-	        null,
-	        ' I\'ve recently graduated with a degree in Physics from UC Santa Cruz, and I\'m looking to apply my expertise in Javascript (React, Node) and Python (Flask, Django, scripting). '
+	        'div',
+	        { className: 'text' },
+	        'I\'ve recently graduated with a degree in Physics from UC Santa Cruz, and I\'m looking to build stuff with you.'
 	      ),
 	      React.createElement(
-	        'p',
-	        null,
-	        ' When I\'m not pulling shots and coding, you could probably find me riding up the coastline on my bike, walking my pup, or climbing on rocks.'
+	        'div',
+	        { className: 'text' },
+	        'Some of my skills are:',
+	        React.createElement(
+	          'ul',
+	          null,
+	          React.createElement(
+	            'li',
+	            { className: 'language' },
+	            ' ',
+	            React.createElement(
+	              'strong',
+	              null,
+	              'Javascript'
+	            ),
+	            ' [  React, jQuery, Node  ]'
+	          ),
+	          React.createElement(
+	            'li',
+	            { className: 'language' },
+	            ' ',
+	            React.createElement(
+	              'strong',
+	              null,
+	              'Python'
+	            ),
+	            ' [ Flask, Django, Scripting + Analysis ]'
+	          ),
+	          React.createElement(
+	            'li',
+	            { className: 'language' },
+	            ' ',
+	            React.createElement(
+	              'strong',
+	              null,
+	              'Anything'
+	            ),
+	            ' [ I can learn it ]'
+	          )
+	        )
 	      ),
 	      React.createElement(
-	        'p',
-	        { className: 'lead' },
+	        'div',
+	        { className: 'text' },
 	        'Check out some web projects I\'ve created below!'
 	      )
 	    );
@@ -178,6 +222,18 @@
 	          ' ',
 	          React.createElement(
 	            'a',
+	            { href: 'https://www.linkedin.com/in/christopher-powers-a1010553', target: '_blank' },
+	            ' ',
+	            React.createElement('i', { className: 'fa fa-linkedin', 'aria-hidden': 'true' }),
+	            ' LinkedIn'
+	          )
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          ' ',
+	          React.createElement(
+	            'a',
 	            { href: 'https://twitter.com/see_cpowers', target: '_blank' },
 	            ' ',
 	            React.createElement('i', { className: 'fa fa-twitter', 'aria-hidden': 'true' }),
@@ -190,10 +246,10 @@
 	          ' ',
 	          React.createElement(
 	            'a',
-	            { href: 'https://www.linkedin.com/in/christopher-powers-a1010553', target: '_blank' },
+	            { href: 'https://www.instagram.com/entro.p/', target: '_blank' },
 	            ' ',
-	            React.createElement('i', { className: 'fa fa-linkedin', 'aria-hidden': 'true' }),
-	            ' LinkedIn'
+	            React.createElement('i', { className: 'fa fa-instagram', 'aria-hidden': 'true' }),
+	            'Instagram'
 	          )
 	        ),
 	        React.createElement(

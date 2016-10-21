@@ -53,21 +53,33 @@ var projects = [
 ]
 
 const Header = React.createClass({
+  /*  I've recently graduated with a degree in Physics from UC Santa Cruz,
+    and I'm looking to apply my expertise in <strong>Javascript</strong> (React, Node)
+    and <strong>Python</strong> (Flask, Django, scripting).
+  */
   render () {
     return (
       <div className="jumbotron">
-        <div className="top-into">
-          <div>
-            <h1 className="display-3">Hello, (hiring) world!</h1>
-            <p className="lead">My name is <strong> Chris Powers </strong>, and I'm a web developer living in San Diego, California.</p>
-          </div>
+        <div className="top-intro">
+          <h1 className="display-3">I'm <strong> Chris Powers </strong> </h1>
+          <p className="lead">A <strong>web developer</strong> and barista living in San Diego, California.</p>
         </div>
         <hr className="m-y-2" />
-        <p> I've recently graduated with a degree in Physics from UC Santa Cruz, and I'm looking to apply my expertise in Javascript (React, Node) and Python (Flask, Django, scripting). </p>
-        <p> When I'm not pulling shots and coding, you could probably find me riding up the coastline on my bike, walking my pup, or climbing on rocks.</p>
-        <p className="lead">
+        <div className="text">
+          I've recently graduated with a degree in Physics from UC Santa Cruz,
+          and I'm looking to build stuff with you.
+        </div>
+        <div className="text">
+          Some of my skills are:
+          <ul>
+            <li className="language"> <strong>Javascript</strong> [  React, jQuery, Node  ]</li>
+            <li className="language"> <strong>Python</strong> [ Flask, Django, Scripting + Analysis ]</li>
+            <li className="language"> <strong>Anything</strong> [ I can learn it ]</li>
+          </ul>
+        </div>
+        <div className="text">
           Check out some web projects I've created below!
-        </p>
+        </div>
       </div>
      )
   }
@@ -81,8 +93,9 @@ const Footer = React.createClass({
         <p>You can contact or follow me via any of these services:</p>
         <ul className="social list-inline">
           <li> <a href="https://github.com/C-Powers" target="_blank"> <i className="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
-          <li> <a href="https://twitter.com/see_cpowers" target="_blank"> <i className="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
           <li> <a href="https://www.linkedin.com/in/christopher-powers-a1010553" target="_blank"> <i className="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+          <li> <a href="https://twitter.com/see_cpowers" target="_blank"> <i className="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+          <li> <a href="https://www.instagram.com/entro.p/" target="_blank"> <i className="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
           <li> <a href="https://plus.google.com/u/0/115863216480353372116/posts" target="_blank"> <i className="fa fa-google-plus" aria-hidden="true"></i>Google Plus</a></li>
         </ul>
       </footer>

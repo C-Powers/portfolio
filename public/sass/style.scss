@@ -3,8 +3,8 @@
 @import url('font-awesome.min.css');
 
 #app {
-  //background: #2ecc71;
-  background: linear-gradient(#2ecc71, #CA6924); /* Standard syntax */
+  background: #2ecc71;
+  //background: linear-gradient(#2ecc71, #CA6924); /* Standard syntax */
 }
 
 
@@ -12,11 +12,20 @@
 .jumbotron {
   background-color: #3498db !important;
   color: #ecf0f1 !important;
-  padding: 0 10em 0 20em;
+  padding: 0 5vw 0 20em;
   z-index: -1;
-  p {
-    font-size: 2.5em;
-    margin-left: 2em;
+  .top-intro {
+    margin-bottom: 2em;
+    p {
+      font-size: 2.0em;
+    }
+  }
+  .text {
+    font-size: 2.0em;
+    margin: 0 0 1.5em 1.5em;
+    .language {
+      margin-left: 1.5em;
+    }
   }
   hr {
     height: 1px;
@@ -28,7 +37,7 @@
 
 // Social media icons/buttons. In footer
 footer {
-  //background-color: #2ecc71;
+  background-color: #CA6924;
   color: #ecf0f1;
   padding: 2em 0 5em 0;
 }
@@ -58,6 +67,7 @@ footer {
             .fa-twitter {color: #00a0d1}
             .fa-linkedin {color: #0077b5}
             .fa-google-plus {color: #dd4b39}
+            .fa-instagram {color: black}
         }
 
         &:before {
@@ -86,7 +96,8 @@ footer {
 
 .main-content {
   padding: 5em 0 5em 0;
-  background-color: #ecf0f1;
+  //background-color: #ecf0f1;
+  background: linear-gradient(#2ecc71, #CA6924); /* Standard syntax */
   position: relative;
   z-index: 10;
 }
@@ -259,7 +270,7 @@ footer {
       background: $green;
       width: .5em;
       z-index: 0;
-      height: 100vh;
+      height: 200vh;
       display: block;
       position: absolute;
       &:after {
@@ -313,7 +324,7 @@ footer {
   //=========================
 
   .flower-0 {
-    @include config(5em, 6em, $yellow, $orange, 0em, 1);
+    @include config(7em, 6em, $yellow, $orange, 0em, 1);
   }
   /*
   .flower-1 {
@@ -321,7 +332,7 @@ footer {
   }
   */
   .flower-1 {
-    @include config(6em, 1em, $purple, $pink, 0em, 2);
+    @include config(8em, 1em, $purple, $pink, 0em, 2);
   }
   .flower-2 {
     @include config(3em, 4em,$orange, $red, 0em, 0);
