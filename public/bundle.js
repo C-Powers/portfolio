@@ -102,11 +102,6 @@
 	        { className: 'top-into' },
 	        React.createElement(
 	          'div',
-	          { className: 'img' },
-	          React.createElement('img', null)
-	        ),
-	        React.createElement(
-	          'div',
 	          null,
 	          React.createElement(
 	            'h1',
@@ -316,7 +311,6 @@
 	        { className: 'container-fluid main-content' },
 	        React.createElement(Parent, { data: projects })
 	      ),
-	      React.createElement('hr', null),
 	      React.createElement(Footer, null)
 	    );
 	  }

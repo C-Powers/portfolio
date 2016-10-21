@@ -57,9 +57,6 @@ const Header = React.createClass({
     return (
       <div className="jumbotron">
         <div className="top-into">
-          <div className="img">
-            <img></img>
-          </div>
           <div>
             <h1 className="display-3">Hello, (hiring) world!</h1>
             <p className="lead">My name is <strong> Chris Powers </strong>, and I'm a web developer living in San Diego, California.</p>
@@ -185,7 +182,6 @@ const App = React.createClass({
         <div className='container-fluid main-content'>
           <Parent data={projects} />
         </div>
-        <hr />
         <Footer />
       </div>
     )
