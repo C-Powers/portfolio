@@ -5,49 +5,49 @@ var projects = [
   {
     'name': 'Top Campers',
     'url': 'https://camper-leaderboard.herokuapp.com/',
-    'path': 'http://i.imgur.com/m5SZNC7.png',
+    'path': 'https://i.imgur.com/m5SZNC7.png',
     'description': 'A React.js app utilizing ajax to call in FreeCodeCamp\'s leaderboard.'
   },
   {
     'name': 'QueerReviews',
     'url': 'https://queerr.herokuapp.com/',
-    'path': 'http://i.imgur.com/O4GlliS.png',
+    'path': 'https://i.imgur.com/O4GlliS.png',
     'description': 'An app made for Grindr\'s Hack4Equality hackathon. My partner and I presented a glassdoor-esque app where LGBTQ people could rate and review companies they\'ve worked for.'
   },
   {'name': 'Veggie Recipes',
     'localpath': 'images/webScraper.jpg',
     'url': 'https://veggierecipes.herokuapp.com/',
-    'path': 'http://i.imgur.com/BsztKQz.jpg',
+    'path': 'https://i.imgur.com/BsztKQz.jpg',
     'description': 'A web scraper made with Django, utilizing an endpoint, that scrapes the top posts of a subreddit to grab and return a tasty veggie recipe!'
   },
   {'name': 'Twich Streamers',
       'localpath': 'images/twitchStreamers.jpg',
       'url': 'http://twitchsteamers.pythonanywhere.com/',
-      'path': 'http://i.imgur.com/NzLVi3b.jpg',
+      'path': 'https://i.imgur.com/NzLVi3b.jpg',
       'description': 'A responsive JS app, utilizing HTML injection, that returns a list of Twitch streamers. '
       },
   {'name': 'JS Calculator',
     'localpath': 'images/jscalculator.jpg',
     'url': 'https://codepen.io/cpowers/full/QNYoXx/',
-    'path': 'http://i.imgur.com/aFrRDpX.jpg',
+    'path': 'https://i.imgur.com/aFrRDpX.jpg',
     'description': 'A simple calculator created with JavaScript'
     },
   {'name': 'Random Quote Machine',
     'localpath': 'images/randomQuote.jpg',
     'url': 'https://codepen.io/cpowers/full/mPMvow/',
-    'path': 'http://i.imgur.com/0xykqgu.jpg',
+    'path': 'https://i.imgur.com/0xykqgu.jpg',
     'description': 'An app that returns a random Lord of the Rings Quote. Potatoes, eh?'
     },
   {'name': 'TicTacToe',
     'localpath': 'images/tictactoe.jpg',
     'url': 'https://codepen.io/cpowers/full/wGbzVj/',
-    'path': 'http://i.imgur.com/kKkJlmy.jpg',
+    'path': 'https://i.imgur.com/kKkJlmy.jpg',
     'description': 'A two player tic tac toe game, made with JS'
   },
   {
     'name': 'San Diego Randonneurs',
     'url': 'http://sdrandos.pythonanywhere.com/',
-    'path': 'http://i.imgur.com/8cRmvvl.png',
+    'path': 'https://i.imgur.com/8cRmvvl.png',
     'description': 'A site made for a local long distance cycling group. Built with Django, it utilizes a web scraping endpoint to get data from the nationwide rando webpage, and display local-only results.'
   }
 ]
@@ -64,6 +64,7 @@ const Header = React.createClass({
         </div>
         <hr className="m-y-2" />
         <p> I've recently graduated with a degree in Physics from UC Santa Cruz, and I'm looking to apply my expertise in Javascript (React, Node) and Python (Flask, Django, scripting). </p>
+        <p> When I'm not pulling shots and coding, you could probably find me riding up the coastline on my bike, walking my pup, or climbing on rocks.</p>
         <p className="lead">
           Check out some web projects I've created below!
         </p>

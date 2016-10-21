@@ -6,12 +6,15 @@
   background-color: #2ecc71;
 }
 
+
+/* headers (.jumbotron) and footer (.footer) */
 .jumbotron {
   background-color: #3498db !important;
   color: #ecf0f1 !important;
-  padding: 0 2em 0 20em;
+  padding: 0 10em 0 20em;
   z-index: -1;
   p {
+    font-size: 2.5em;
     margin-left: 2em;
   }
   hr {
@@ -21,55 +24,6 @@
     border: none;
   }
 }
-
-.top-intro{
-  @include display-flex;
-  @include flex-direction(row);
-}
-
-.main-content {
-  padding-bottom: 5em;
-  background-color: #ecf0f1;
-  position: relative;
-  z-index: 10;
-}
-
-.items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: stretch;
-}
-
-.item {
-  background-color: white;
-  margin-right: 20px;
-  height: auto;
-  width: 400px;
-  min-height: 50px;
-  margin: 0 2em 2em 0;
-  @include transition(all .15s ease);
-  &:hover {
-    @include scale(1.25);
-  }
-  img {
-    height: auto;
-    width: 400px;
-    z-index: -1;
-  }
-  p {
-    background: rgba(255,255,255,0.95);
-    border-radius: 5px;
-    width: 400px;
-  }
-}
-
-.desc {
-  display: 'block';
-  z-index: 1;
-  position: absolute;
-}
-
 
 // Social media icons/buttons. In footer
 footer {
@@ -85,11 +39,11 @@ footer {
     }
 
     p {
-      font-size: 1.25em;
+      font-size: 2.25em;
     }
 
     li {
-        font-size: 1.25em;
+        font-size: 2.25em;
         position: relative;
         @include inline-block();
         margin: .5em;
@@ -125,6 +79,54 @@ footer {
     }
 }
 
+
+/* body content */
+
+.main-content {
+  padding-bottom: 5em;
+  background-color: #ecf0f1;
+  position: relative;
+  z-index: 10;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.item {
+  background-color: white;
+  margin-right: 20px;
+  height: auto;
+  width: 500px;
+  min-width: 300px;
+  min-height: 300px;
+  margin: 0 2em 2em 0;
+  border-radius:5px;
+  @include transition(all .15s ease);
+  &:hover {
+    @include scale(1.25);
+  }
+  img {
+    height: auto;
+    width: 500px;
+    //min-width: 300px;
+    z-index: -1;
+  }
+  p {
+    background: rgba(255,255,255,0.95);
+    border-radius: 5px;
+    width: 500px;
+  }
+}
+
+.desc {
+  display: 'block';
+  z-index: 1;
+  position: absolute;
+}
 
 /* flower animations
   Z-index is in front of jumbotron, and behind main-content
