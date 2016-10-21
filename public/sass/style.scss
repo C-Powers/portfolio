@@ -73,7 +73,7 @@
 
 // Social media icons/buttons. In footer
 footer {
-  background-color: #2ecc71;
+  //background-color: #2ecc71;
   padding: 2em 0 5em 0;
 }
 .social {
@@ -125,6 +125,10 @@ footer {
     }
 }
 
+
+/* flower animations
+  Z-index is in front of jumbotron, and behind main-content
+*/
 .bg {
   z-index: 0;
   $bg : rgb(210,210,180);
@@ -183,7 +187,7 @@ footer {
 
   @include keyframes(grow){
     from {
-      top: 2em;
+      top: 15em;
     }
     to {
       top: 1em;

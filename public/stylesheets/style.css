@@ -154,7 +154,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 75, ../sass/style.scss */
 footer {
-  background-color: #2ecc71;
   padding: 2em 0 5em 0;
 }
 
@@ -229,7 +228,10 @@ footer {
   text-overflow: ellipsis;
 }
 
-/* line 128, ../sass/style.scss */
+/* flower animations
+  Z-index is in front of jumbotron, and behind main-content
+*/
+/* line 132, ../sass/style.scss */
 .bg {
   z-index: 0;
   /*
@@ -240,7 +242,7 @@ footer {
 }
 @-webkit-keyframes grow {
   from {
-    top: 2em;
+    top: 15em;
   }
   to {
     top: 1em;
@@ -249,7 +251,7 @@ footer {
 }
 @-moz-keyframes grow {
   from {
-    top: 2em;
+    top: 15em;
   }
   to {
     top: 1em;
@@ -258,7 +260,7 @@ footer {
 }
 @-ms-keyframes grow {
   from {
-    top: 2em;
+    top: 15em;
   }
   to {
     top: 1em;
@@ -267,7 +269,7 @@ footer {
 }
 @keyframes grow {
   from {
-    top: 2em;
+    top: 15em;
   }
   to {
     top: 1em;
@@ -386,12 +388,12 @@ footer {
     -o-transform: rotateY(0deg);
   }
 }
-/* line 239, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 .bg body {
   padding: 3em;
   background: #d2d2b4;
 }
-/* line 243, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 .bg .flower {
   -moz-animation-name: grow;
   -webkit-animation-name: grow;
@@ -405,7 +407,7 @@ footer {
   position: absolute;
   z-index: 0;
 }
-/* line 249, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 .bg .flower span {
   background: #b4d28c;
   width: .5em;
@@ -414,7 +416,7 @@ footer {
   display: block;
   position: absolute;
 }
-/* line 256, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 .bg .flower span:after {
   content: '';
   transform: rotateY(-140deg);
@@ -434,7 +436,7 @@ footer {
   left: .5em;
   position: relative;
 }
-/* line 272, ../sass/style.scss */
+/* line 276, ../sass/style.scss */
 .bg .flower span:before {
   transform: rotateY(140deg);
   -moz-transform: rotateY(140deg);
@@ -462,7 +464,7 @@ footer {
   left: -3em;
   top: 5em;
 }
-/* line 294, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 .bg html:after {
   content: '';
   position: absolute;
@@ -471,7 +473,7 @@ footer {
   height: 2em;
   background: #c7c7a1;
 }
-/* line 306, ../sass/style.scss */
+/* line 310, ../sass/style.scss */
 .bg .flower-0 {
   height: 5em;
   width: 5em;
@@ -482,20 +484,20 @@ footer {
   border: 0em solid #F8C475;
   box-shadow: 0 0 0 0.2em #f7bc62, 0 0 0 0.2em #f5f988 inset;
 }
-/* line 220, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .bg .flower-0 span {
   top: 5.2em;
   left: 2.17391em;
 }
-/* line 229, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .bg .flower-0 span:before {
   display: block;
 }
-/* line 230, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .bg .flower-0 span:after {
   display: none;
 }
-/* line 314, ../sass/style.scss */
+/* line 318, ../sass/style.scss */
 .bg .flower-1 {
   height: 6em;
   width: 6em;
@@ -506,20 +508,20 @@ footer {
   border: 0em solid #FF89B3;
   box-shadow: 0 0 0 0.2em #ff75a6, 0 0 0 0.2em #e2bfff inset;
 }
-/* line 220, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .bg .flower-1 span {
   top: 6.2em;
   left: 2.6087em;
 }
-/* line 233, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 .bg .flower-1 span:before {
   display: block;
 }
-/* line 234, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 .bg .flower-1 span:after {
   display: block;
 }
-/* line 317, ../sass/style.scss */
+/* line 321, ../sass/style.scss */
 .bg .flower-2 {
   height: 3em;
   width: 3em;
@@ -530,20 +532,20 @@ footer {
   border: 0em solid #F87575;
   box-shadow: 0 0 0 0.2em #f76262, 0 0 0 0.2em #f9cc88 inset;
 }
-/* line 220, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .bg .flower-2 span {
   top: 3.2em;
   left: 1.30435em;
 }
-/* line 225, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .bg .flower-2 span:before {
   display: none;
 }
-/* line 226, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .bg .flower-2 span:after {
   display: none;
 }
-/* line 320, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 .bg .flower-3 {
   height: 7em;
   width: 7em;
@@ -554,20 +556,20 @@ footer {
   border: 0em solid #F8C475;
   box-shadow: 0 0 0 0.2em #f7bc62, 0 0 0 0.2em #f98888 inset;
 }
-/* line 220, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .bg .flower-3 span {
   top: 7.2em;
   left: 3.04348em;
 }
-/* line 229, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .bg .flower-3 span:before {
   display: block;
 }
-/* line 230, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .bg .flower-3 span:after {
   display: none;
 }
-/* line 323, ../sass/style.scss */
+/* line 327, ../sass/style.scss */
 .bg .flower-4 {
   height: 3em;
   width: 3em;
@@ -578,20 +580,20 @@ footer {
   border: 0em solid #a6d6fa;
   box-shadow: 0 0 0 0.2em #92cdf9, 0 0 0 0.2em #88c8f9 inset;
 }
-/* line 220, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .bg .flower-4 span {
   top: 3.2em;
   left: 1.30435em;
 }
-/* line 229, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .bg .flower-4 span:before {
   display: block;
 }
-/* line 230, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .bg .flower-4 span:after {
   display: none;
 }
-/* line 326, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 .bg .flower-5 {
   height: 4em;
   width: 4em;
@@ -602,20 +604,20 @@ footer {
   border: 0em solid #FF89B3;
   box-shadow: 0 0 0 0.2em #ff75a6, 0 0 0 0.2em #e2bfff inset;
 }
-/* line 220, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .bg .flower-5 span {
   top: 4.2em;
   left: 1.73913em;
 }
-/* line 233, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 .bg .flower-5 span:before {
   display: block;
 }
-/* line 234, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 .bg .flower-5 span:after {
   display: block;
 }
-/* line 329, ../sass/style.scss */
+/* line 333, ../sass/style.scss */
 .bg .flower-6 {
   height: 5em;
   width: 5em;
@@ -626,27 +628,27 @@ footer {
   border: 1.2em solid #F8C475;
   box-shadow: 0 0 0 0.2em #f7bc62, 0 0 0 0.2em #f98888 inset;
 }
-/* line 220, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .bg .flower-6 span {
   top: 6.4em;
   left: 2.17391em;
 }
-/* line 233, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 .bg .flower-6 span:before {
   display: block;
 }
-/* line 234, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 .bg .flower-6 span:after {
   display: block;
 }
-/* line 333, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .bg .flower-0 {
   -moz-animation-delay: 0s;
   -webkit-animation-delay: 0s;
   -moz-animation-delay: 0s;
   left: 1em;
 }
-/* line 336, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .bg .flower-0 span:before {
   -moz-animation-name: turn-right;
   -webkit-animation-name: turn-right;
@@ -657,7 +659,7 @@ footer {
   -moz-animation-duration: 3s;
   -webkit-animation-duration: 3s;
 }
-/* line 339, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .bg .flower-0 span:after {
   -moz-animation-name: turn-left;
   -webkit-animation-name: turn-left;
@@ -668,14 +670,14 @@ footer {
   -moz-animation-duration: 2s;
   -webkit-animation-duration: 2s;
 }
-/* line 333, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .bg .flower-1 {
   -moz-animation-delay: 0.3s;
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
   left: 11em;
 }
-/* line 336, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .bg .flower-1 span:before {
   -moz-animation-name: turn-right;
   -webkit-animation-name: turn-right;
@@ -686,7 +688,7 @@ footer {
   -moz-animation-duration: 3s;
   -webkit-animation-duration: 3s;
 }
-/* line 339, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .bg .flower-1 span:after {
   -moz-animation-name: turn-left;
   -webkit-animation-name: turn-left;
@@ -697,14 +699,14 @@ footer {
   -moz-animation-duration: 2s;
   -webkit-animation-duration: 2s;
 }
-/* line 333, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .bg .flower-2 {
   -moz-animation-delay: 0.6s;
   -webkit-animation-delay: 0.6s;
   -moz-animation-delay: 0.6s;
   left: 21em;
 }
-/* line 336, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .bg .flower-2 span:before {
   -moz-animation-name: turn-right;
   -webkit-animation-name: turn-right;
@@ -715,7 +717,7 @@ footer {
   -moz-animation-duration: 3s;
   -webkit-animation-duration: 3s;
 }
-/* line 339, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .bg .flower-2 span:after {
   -moz-animation-name: turn-left;
   -webkit-animation-name: turn-left;
@@ -726,14 +728,14 @@ footer {
   -moz-animation-duration: 2s;
   -webkit-animation-duration: 2s;
 }
-/* line 333, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .bg .flower-3 {
   -moz-animation-delay: 0.9s;
   -webkit-animation-delay: 0.9s;
   -moz-animation-delay: 0.9s;
   left: 31em;
 }
-/* line 336, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .bg .flower-3 span:before {
   -moz-animation-name: turn-right;
   -webkit-animation-name: turn-right;
@@ -744,7 +746,7 @@ footer {
   -moz-animation-duration: 3s;
   -webkit-animation-duration: 3s;
 }
-/* line 339, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .bg .flower-3 span:after {
   -moz-animation-name: turn-left;
   -webkit-animation-name: turn-left;
@@ -755,14 +757,14 @@ footer {
   -moz-animation-duration: 2s;
   -webkit-animation-duration: 2s;
 }
-/* line 333, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .bg .flower-4 {
   -moz-animation-delay: 1.2s;
   -webkit-animation-delay: 1.2s;
   -moz-animation-delay: 1.2s;
   left: 41em;
 }
-/* line 336, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .bg .flower-4 span:before {
   -moz-animation-name: turn-right;
   -webkit-animation-name: turn-right;
@@ -773,7 +775,7 @@ footer {
   -moz-animation-duration: 3s;
   -webkit-animation-duration: 3s;
 }
-/* line 339, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .bg .flower-4 span:after {
   -moz-animation-name: turn-left;
   -webkit-animation-name: turn-left;
@@ -784,14 +786,14 @@ footer {
   -moz-animation-duration: 2s;
   -webkit-animation-duration: 2s;
 }
-/* line 333, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .bg .flower-5 {
   -moz-animation-delay: 1.5s;
   -webkit-animation-delay: 1.5s;
   -moz-animation-delay: 1.5s;
   left: 51em;
 }
-/* line 336, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .bg .flower-5 span:before {
   -moz-animation-name: turn-right;
   -webkit-animation-name: turn-right;
@@ -802,7 +804,7 @@ footer {
   -moz-animation-duration: 3s;
   -webkit-animation-duration: 3s;
 }
-/* line 339, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .bg .flower-5 span:after {
   -moz-animation-name: turn-left;
   -webkit-animation-name: turn-left;
@@ -813,14 +815,14 @@ footer {
   -moz-animation-duration: 2s;
   -webkit-animation-duration: 2s;
 }
-/* line 333, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .bg .flower-6 {
   -moz-animation-delay: 1.8s;
   -webkit-animation-delay: 1.8s;
   -moz-animation-delay: 1.8s;
   left: 61em;
 }
-/* line 336, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .bg .flower-6 span:before {
   -moz-animation-name: turn-right;
   -webkit-animation-name: turn-right;
@@ -831,7 +833,7 @@ footer {
   -moz-animation-duration: 3s;
   -webkit-animation-duration: 3s;
 }
-/* line 339, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .bg .flower-6 span:after {
   -moz-animation-name: turn-left;
   -webkit-animation-name: turn-left;
