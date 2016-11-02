@@ -163,7 +163,6 @@ const Parent = React.createClass({
     this.setState({selectedItem: idx})
   },
   render () {
-    //  console.log(this.props.data)
     let ulStyle = {
       padding: '0px',
       margin: '20px'
