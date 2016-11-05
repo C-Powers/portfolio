@@ -93,7 +93,7 @@ const Footer = React.createClass({
         <p>You can contact or follow me via any of these services:</p>
         <ul className="social list-inline">
           <li> <a href="https://github.com/C-Powers" target="_blank"> <i className="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
-          <li> <a href="https://www.linkedin.com/in/christopher-powers-a1010553" target="_blank"> <i className="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+          <li> <a href="https://www.linkedin.com/in/chris-powers-a1010553" target="_blank"> <i className="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
           <li> <a href="https://twitter.com/see_cpowers" target="_blank"> <i className="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
           <li> <a href="https://www.instagram.com/entro.p/" target="_blank"> <i className="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
           <li> <a href="https://plus.google.com/u/0/115863216480353372116/posts" target="_blank"> <i className="fa fa-google-plus" aria-hidden="true"></i>Google Plus</a></li>
