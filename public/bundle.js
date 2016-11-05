@@ -222,7 +222,7 @@
 	          ' ',
 	          React.createElement(
 	            'a',
-	            { href: 'https://www.linkedin.com/in/christopher-powers-a1010553', target: '_blank' },
+	            { href: 'https://www.linkedin.com/in/chris-powers-a1010553', target: '_blank' },
 	            ' ',
 	            React.createElement('i', { className: 'fa fa-linkedin', 'aria-hidden': 'true' }),
 	            ' LinkedIn'
@@ -337,7 +337,6 @@
 	    this.setState({ selectedItem: idx });
 	  },
 	  render: function render() {
-	    //  console.log(this.props.data)
 	    var ulStyle = {
 	      padding: '0px',
 	      margin: '20px'
