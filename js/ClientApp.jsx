@@ -3,6 +3,12 @@ const ReactDOM = require('react-dom')
 
 var projects = [
   {
+    'name': 'Web Theremin',
+    'url': 'https://webtheremin.herokuapp.com/',
+    'path': '',
+    'description': 'A vanilla js app utilizing web audio principles.'
+  },
+  {
     'name': 'Top Campers',
     'url': 'https://camper-leaderboard.herokuapp.com/',
     'path': 'https://i.imgur.com/m5SZNC7.png',
@@ -62,18 +68,19 @@ const Header = React.createClass({
       <div className="jumbotron">
         <div className="top-intro">
           <h1 className="display-3">I'm <strong> Chris Powers </strong> </h1>
-          <p className="lead">A <strong>web developer</strong> and barista living in San Diego, California.</p>
+          <p className="lead">A <strong>full stack developer</strong> enjoying California.</p>
         </div>
         <hr className="m-y-2" />
         <div className="text">
-          I've recently graduated with a degree in Physics from UC Santa Cruz,
-          and I'm looking to build stuff with you.
+          I'm a full stack developer
         </div>
         <div className="text">
           Some of my skills are:
           <ul>
-            <li className="language"> <strong>Javascript</strong> [  React, jQuery, Node  ]</li>
+            <li className="language"> <strong>Javascript</strong> [  React, Vanilla, jQuery, Node  ]</li>
             <li className="language"> <strong>Python</strong> [ Flask, Django, Scripting + Analysis ]</li>
+            <li className="language"> <strong> C# </strong> [ .NET, Entity, performace based/OOP ]</li>
+            <li className="language"> <strong>DataBase</strong> [ PostgreSQL, Mongo ]</li>
             <li className="language"> <strong>Anything</strong> [ I can learn it ]</li>
           </ul>
         </div>

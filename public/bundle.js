@@ -50,6 +50,11 @@
 	var ReactDOM = __webpack_require__(158);
 
 	var projects = [{
+	  'name': 'Web Theremin',
+	  'url': 'https://webtheremin.herokuapp.com/',
+	  'path': '',
+	  'description': 'A vanilla js app utilizing web audio principles.'
+	}, {
 	  'name': 'Top Campers',
 	  'url': 'https://camper-leaderboard.herokuapp.com/',
 	  'path': 'https://i.imgur.com/m5SZNC7.png',
@@ -123,16 +128,16 @@
 	          React.createElement(
 	            'strong',
 	            null,
-	            'web developer'
+	            'full stack developer'
 	          ),
-	          ' and barista living in San Diego, California.'
+	          ' enjoying California.'
 	        )
 	      ),
 	      React.createElement('hr', { className: 'm-y-2' }),
 	      React.createElement(
 	        'div',
 	        { className: 'text' },
-	        'I\'ve recently graduated with a degree in Physics from UC Santa Cruz, and I\'m looking to build stuff with you.'
+	        'I\'m a full stack developer'
 	      ),
 	      React.createElement(
 	        'div',
@@ -150,7 +155,7 @@
 	              null,
 	              'Javascript'
 	            ),
-	            ' [  React, jQuery, Node  ]'
+	            ' [  React, Vanilla, jQuery, Node  ]'
 	          ),
 	          React.createElement(
 	            'li',
@@ -162,6 +167,28 @@
 	              'Python'
 	            ),
 	            ' [ Flask, Django, Scripting + Analysis ]'
+	          ),
+	          React.createElement(
+	            'li',
+	            { className: 'language' },
+	            ' ',
+	            React.createElement(
+	              'strong',
+	              null,
+	              ' C# '
+	            ),
+	            ' [ .NET, Entity, performace based/OOP ]'
+	          ),
+	          React.createElement(
+	            'li',
+	            { className: 'language' },
+	            ' ',
+	            React.createElement(
+	              'strong',
+	              null,
+	              'DataBase'
+	            ),
+	            ' [ PostgreSQL, Mongo ]'
 	          ),
 	          React.createElement(
 	            'li',
