@@ -68,19 +68,19 @@ const Header = React.createClass({
       <div className="jumbotron">
         <div className="top-intro">
           <h1 className="display-3">I'm <strong> Chris Powers </strong> </h1>
-          <p className="lead">A <strong>full stack developer</strong> enjoying California.</p>
+          <p className="lead">A <strong>full stack developer</strong> who likes to write code and ride bikes.</p>
         </div>
         <hr className="m-y-2" />
-        <div className="text">
+        {/* <div className="text">
           I'm a full stack developer
-        </div>
+        </div> */}
         <div className="text">
           Some of my skills are:
           <ul>
-            <li className="language"> <strong>Javascript</strong> [  React, Vanilla, jQuery, Node  ]</li>
+            <li className="language"> <strong>Javascript</strong> [ React, Vanilla, Node, jQuery, StructureJS ]</li>
             <li className="language"> <strong>Python</strong> [ Flask, Django, Scripting + Analysis ]</li>
             <li className="language"> <strong> C# </strong> [ .NET, Entity, performace based/OOP ]</li>
-            <li className="language"> <strong>DataBase</strong> [ PostgreSQL, Mongo ]</li>
+            <li className="language"> <strong>DataBase</strong> [ AmazonAWS/cloud architecture, PostgreSQL, Mongo ]</li>
             <li className="language"> <strong>Anything</strong> [ I can learn it ]</li>
           </ul>
         </div>

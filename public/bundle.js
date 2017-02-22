@@ -130,15 +130,10 @@
 	            null,
 	            'full stack developer'
 	          ),
-	          ' enjoying California.'
+	          ' who likes to write code and ride bikes.'
 	        )
 	      ),
 	      React.createElement('hr', { className: 'm-y-2' }),
-	      React.createElement(
-	        'div',
-	        { className: 'text' },
-	        'I\'m a full stack developer'
-	      ),
 	      React.createElement(
 	        'div',
 	        { className: 'text' },
@@ -155,7 +150,7 @@
 	              null,
 	              'Javascript'
 	            ),
-	            ' [  React, Vanilla, jQuery, Node  ]'
+	            ' [ React, Vanilla, Node, jQuery, StructureJS ]'
 	          ),
 	          React.createElement(
 	            'li',
@@ -188,7 +183,7 @@
 	              null,
 	              'DataBase'
 	            ),
-	            ' [ PostgreSQL, Mongo ]'
+	            ' [ AmazonAWS/cloud architecture, PostgreSQL, Mongo ]'
 	          ),
 	          React.createElement(
 	            'li',
